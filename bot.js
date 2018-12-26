@@ -30,7 +30,7 @@ client.on("guildMemberAdd", member => {
       var Canvas = require('canvas')
       var jimp = require('jimp')
       
-      const mi = ['./img/w1.png','./img/w2.png','./img/w3.png','./img/w4.png','./img/w5.png','./img/w6.png'];
+      const mi = ['./img/w1.jpg','./img/w2.png','./img/w3.jpg','./img/w4.jpg','./img/w5.jpg','./img/w6.jpg'];
       
      
       
