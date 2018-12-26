@@ -54,13 +54,6 @@ client.on("guildMemberAdd", member => {
                               let ava = new Avatar;
                               ava.src = buf;
                               ctx.drawImage(ava, 152, 27, 95, 95);
-                            //member number..
-                        ctx.font = '13px Arial';
-                        ctx.fontSize = '20px';
-                        ctx.fillStyle = "#FFFFFF";
-                        ctx.textAlign = "center";
-                        ctx.fillText(`انت العضو رقم  ${member.guild.memberCount} ! `, 340 , 98);
-    
                                                       //name
                               ctx.font = '20px Arial Bold';
                               ctx.fontSize = '20px';
@@ -73,7 +66,7 @@ client.on("guildMemberAdd", member => {
                               ctx.fontSize = '28px';
                               ctx.fillStyle = "#FFFFFF";
                               ctx.textAlign = "center";
-   ctx.fillText(` Welcome TO  ${member.guild.name} ` , 200, 190);
+   ctx.fillText(` Welcome To  ${member.guild.name} ` , 200, 190);
    
    
 
