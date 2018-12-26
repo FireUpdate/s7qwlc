@@ -11,6 +11,15 @@ client.on('message', message => {
       }
 });
 
+client.on('guildMemberRemove', member => {
+    const embed = new Discord.RichEmbed()
+    .setDescription(`Welcome **${member.user.username}** to **${member.guild.name}**,You're the **${member.guild.memberCount}th** Member!`)
+    .setColor('RANDOMs')
+var channel =member.guild.channels.find('name', 'chat')
+if (!channel) return;
+channel.send({embed : embed});
+});
+
 
 
 const fs = require('fs');
