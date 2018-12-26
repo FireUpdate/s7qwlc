@@ -16,7 +16,7 @@ client.on('message', message => {
 const fs = require('fs');
 client.on("guildMemberAdd", member => {
       
-      const welcomer = member.guild.channels.find("name","s7q"); //اسم روم
+      const welcomer = member.guild.channels.find("name","chat"); //اسم روم
                 
       var Canvas = require('canvas')
       var jimp = require('jimp')
@@ -86,7 +86,7 @@ client.on("guildMemberAdd", member => {
 
 const moment = require('moment');
 client.on("guildMemberAdd", member => {
-let welcomer = member.guild.channels.find("name","s7q");
+let welcomer = member.guild.channels.find("name","chat");
       if(!welcomer) return;
       if(welcomer) {
          moment.locale('ar-ly');
@@ -116,7 +116,7 @@ client.on('guildMemberRemove', member => {
     .setColor('RED')
     .setFooter(`H Bot`, '')
 
-var channel =member.guild.channels.find('name', 's7q')
+var channel =member.guild.channels.find('name', 'chat')
 if (!channel) return;
 channel.send({embed : embed});
 });
@@ -130,7 +130,7 @@ client.on('ready', () => {
       console.log(`ON ${client.guilds.size} Servers '     Script By : i1Suhaib ' `);
     console.log(`----------------`);
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(`S7Q,~THE~BEST`,"http://twitch.tv/S-F")
+client.user.setGame(`Under Dev!`,"http://twitch.tv/S-F")
 client.user.setStatus("dnd")
 });
 
